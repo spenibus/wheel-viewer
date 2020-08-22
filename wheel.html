@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wheel</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <script src="wheel.js" type="text/javascript"></script>
+        <link href="wheel2.css" rel="stylesheet" type="text/css" />
+        <link href="wheelScalable.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="index">
+
+
+<!-- overlap a couple of these to animate a circle --
+<div id="p0">
+    <div id="p1" class="p"></div>
+    <div id="p2" class="p"></div>
+</div>
+<style scoped="" contenteditable="">
+    .p {
+        width:         80px;
+        height:        80px;
+        border:        20px solid transparent;
+        border-radius: 600px;
+        transform:     rotate(0deg);
+    }
+    #p1 {
+        border-left-color: green;
+        position:relative;
+    }
+    #p1 {
+        border-left-color: green;
+        position:absolute;
+    }
+    #p2 {
+        border-left-color: green;
+        transform:rotate(45deg);
+        transform-origin:center;
+        position:absolute;
+    }
+  </style>
+</div>
+-->
+
+        <div id="viewer">
+
+            <span id="unitRef"></span>
+
+            <span class="viewerCol">
+
+                <span id="wheel">
+                    <span id="wheelA">
+                        <span id="wheelB">
+                            <span id="wheelC">
+                                <span class="partA"></span>
+                                <span class="partB"></span>
+                                <span class="partC"></span>
+                            </span>
+                        </span>
+                        <span id="wheelTopNotch"></span>
+                    </span>
+                </span>
+
+            </span>
+            <span class="viewerCol">
+
+                <span id="gears">
+                    <span id="gearRowBack"><span></span></span>
+                    <span id="gearCol1" class="gearCol forward"><span></span></span>
+                    <span id="gearCol2" class="gearCol forward"><span></span></span>
+                    <span id="gearCol3" class="gearCol forward"><span></span></span>
+                    <span id="gearCol4" class="gearCol reverse"><span></span></span>
+
+                    <span id="gearColNegative1" class="gearColNegative gearColNegativeTop   "><span></span></span>
+                    <span id="gearColNegative2" class="gearColNegative gearColNegativeTop   "><span></span></span>
+                    <span id="gearColNegative3" class="gearColNegative gearColNegativeTop   "><span></span></span>
+                    <span id="gearColNegative4" class="gearColNegative gearColNegativeBottom"><span></span></span>
+                    <span id="gearColNegative5" class="gearColNegative gearColNegativeBottom"><span></span></span>
+                    <span id="gearColNegative6" class="gearColNegative gearColNegativeBottom"><span></span></span>
+
+                    <span id="gearRowFront"><span></span></span>
+                    <span id="gearStick"><span class="gearN"></span></span>
+
+                </span>
+
+                <span id="pedals">
+                    <span id="clutch"   class="pedal"><span><span></span></span></span>
+                    <span id="brake"    class="pedal"><span><span></span></span></span>
+                    <span id="throttle" class="pedal"><span><span></span></span></span>
+                </span>
+
+            </span>
+        </div>
+<!--
+        <div id="viewer">
+            <span class="viewerCol">
+                <img id="wheel"
+                    src="wheel-500.png"
+                    alt="wheel">
+            </span>
+
+            <span class="viewerCol">
+                <span id="gears">
+                    <span id="gearStick"><span id="gearKnob" class="gearN"></span></span>
+                    <span id="gearRowBack"><span></span></span>
+                    <span id="gearCol1" class="gearCol forward"><span></span></span>
+                    <span id="gearCol2" class="gearCol forward"><span></span></span>
+                    <span id="gearCol3" class="gearCol forward"><span></span></span>
+                    <span id="gearCol4" class="gearCol reverse"><span></span></span>
+                    <span id="gearRowFront"><span></span></span>
+                </span>
+
+                <span id="pedals">
+                    <span id="clutch"   class="pedal"><span></span></span>
+                    <span id="brake"    class="pedal"><span></span></span>
+                    <span id="throttle" class="pedal"><span></span></span>
+                </span>
+            </span>
+        </div>
+-->
+
+        <div>
+            <legend><input type="checkbox" id="showDisplay"> Show device data</legend>
+        </div>
+        <div id="dataDisplay">waiting for input</div>
+    </body>
+</html>

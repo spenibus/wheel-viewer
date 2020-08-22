@@ -1,0 +1,352 @@
+body {
+    background-color:transparent;
+    margin:0;
+    padding:0;
+}
+
+#unitRef {
+    display:block;
+    width:1vw;
+    height:1vw;
+    background-color:green;
+    position:fixed;
+    left:-2vw;
+}
+
+#viewer {
+    display:inline-block;
+    height:50vw;
+    background-color:rgba(0,0,0,0.2);
+    font-size:0;
+    white-space:nowrap;
+    border-bottom:1vw red solid;
+}
+
+.viewerCol {
+    display:inline-block;
+    vertical-align:bottom;
+    height:100%;
+}
+
+
+/******************************************************************************/
+#wheel_old {
+    display:inline-block;
+    background-color:rgba(0,255,0,0.2);
+    height:46vw;
+    margin:2vw;
+    display:none;
+}
+
+#wheel {
+    display:inline-block;
+    position:relative;
+}
+
+#wheelTopNotch {
+    width:2vw;
+    height:4vw;
+    background-color:#468;
+    position:absolute;
+    left:18vw;
+    top: -1vw;
+}
+
+#wheelA {
+    display:inline-block;
+    width:38vw;
+    height:38vw;
+    margin:4vw;
+    border:1vw solid #468;
+    border:1vw solid black;
+    border-radius:22vw;
+    overflow:hidden;
+    position:relative;
+}
+#wheelB {
+    margin:-1vw;
+    display:inline-block;
+    width:34vw;
+    height:34vw;
+    border:3vw solid #ACF;
+    border:3vw solid #AAA;
+    border-radius:22vw;
+    overflow:hidden;
+    position:relative;
+}
+#wheelC {
+    margin:-1vw;
+    display:inline-block;
+    width:32vw;
+    height:32vw;
+    border:2vw solid #468;
+    border:2vw solid black;
+    border-radius:22vw;
+    overflow:hidden;
+    position:relative;
+}
+#wheel .partA {
+    display:inline-block;
+    width:60vw;
+    height:60vw;
+    border:5vw solid #468;
+    border-radius:35vw;
+    position:absolute;
+    left:-19vw;
+    top: 15vw;
+}
+#wheel .partB {
+    display:inline-block;
+    background-color:#468;
+    width:8vw;
+    height:20vw;
+    position:absolute;
+    left:12vw;
+    top: 16vw;
+}
+
+
+
+/*
+#wheelB {
+    display:inline-block;
+    width:36vw;
+    height:36vw;
+    margin:4vw;
+    border:3vw solid #ACF;
+    border-radius:22vw;
+    overflow:hidden;
+    position:relative;
+}
+
+#wheel .partA {
+    display:inline-block;
+    width:60vw;
+    height:60vw;
+    border:5vw solid #ACF;
+    border-radius:35vw;
+    position:absolute;
+    left:-17vw;
+    top: 15vw;
+}
+#wheel .partB {
+    display:inline-block;
+    background-color:#ACF;
+    width:8vw;
+    height:20vw;
+    position:absolute;
+    left:14vw;
+    top: 16vw;
+}
+*/
+
+/******************************************************************************/
+#gears {
+    display:inline-block;
+    margin:2vw 2vw 0vw 0vw;
+    position:relative;
+}
+
+.gearCol {
+    display:inline-block;
+    vertical-align:bottom;
+    width:4vw;
+    height:18vw;
+    margin:1vw;
+    background-color:black;
+    border-radius:2vw;
+    position:relative;
+}
+
+.gearCol > span {
+    display:inline-block;
+    vertical-align:top;
+    background-color:#AAA;
+    width:2vw;
+    height:16vw;
+    margin:1vw;
+    border-radius:1vw;
+}
+
+#gearRowBack {
+    display:block;
+    background-color:black;
+    width:22vw;
+    height:4vw;
+    border-radius:2vw;
+    position:absolute;
+    left:1vw;
+    top:8vw;
+}
+
+#gearRowFront {
+    display:block;
+    background-color:#AAA;
+    width:20vw;
+    height:2vw;
+    border-radius:2vw;
+    position:absolute;
+    left:2vw;
+    top:9vw;
+}
+
+#gearCol4 {
+    height:11vw;
+}
+
+#gearCol4 > span {
+    height:9vw;
+}
+
+.gearColNegative {
+    position:absolute;
+    display:inline-block;
+    border:1vw solid #AAA;
+}
+
+.gearColNegative > span {
+    width:2vw;
+    height:4vw;
+    display:inline-block;
+    border:1vw solid black;
+}
+
+.gearColNegativeTop
+,.gearColNegativeTop > span {
+    border-radius: 0vw 0vw 20vw 20vw;
+    border-top:none;
+}
+
+.gearColNegativeBottom
+,.gearColNegativeBottom > span  {
+    border-radius: 20vw 20vw 0vw 0vw;
+    border-bottom:none;
+}
+
+#gearColNegative1 {
+    top:4vw;
+    left:3vw;
+}
+
+#gearColNegative2 {
+    top:4vw;
+    left:9vw;
+}
+
+#gearColNegative3 {
+    top:4vw;
+    left:15vw;
+    border-right:none;
+    border-radius: 0vw 0vw 0vw 20vw;
+}
+#gearColNegative3 > span {
+    border-right:none;
+    border-radius: 0vw 0vw 0vw 20vw;
+    width:1vw;
+}
+
+#gearColNegative4 {
+    top:10vw;
+    left:3vw;
+}
+
+#gearColNegative5 {
+    top:10vw;
+    left:9vw;
+}
+
+#gearColNegative6 {
+    top:10vw;
+    left:15vw;
+}
+
+
+#gearStick {
+    display:block;
+    background-color:#246;
+    width: 6vw;
+    height:6vw;
+    border-radius:3vw;
+    position:absolute;
+    top: 7vw;
+    left:6vw;
+}
+
+#gearStick > span {
+    display:block;
+    background-color:#ACF;
+    width:4vw;
+    height:4vw;
+    border-radius:2vw;
+    margin:1vw;
+}
+
+#gearStick.gearF1 {
+    top: 0vw;
+    left:0vw;
+}
+
+#gearStick.gearF2 {
+    top: 14vw;
+    left:0vw;
+}
+
+#gearStick.gearF3 {
+    top: 0vw;
+    left:6vw;
+}
+
+#gearStick.gearF4 {
+    top: 14vw;
+    left:6vw;
+}
+
+#gearStick.gearF5 {
+    top: 0vw;
+    left:12vw;
+}
+
+#gearStick.gearF6 {
+    top: 14vw;
+    left:12vw;
+}
+
+#gearStick.gearR1 {
+    top: 14vw;
+    left:18vw;
+}
+
+
+/******************************************************************************/
+#pedals {
+    display:block;
+    margin:2vw 2vw 0vw 0vw;
+}
+
+.pedal {
+    display:inline-block;
+    vertical-align:bottom;
+    background-color:#AAA;
+    width:4vw;
+    height:22vw;
+    margin:0 1vw;
+    border:1vw solid black;
+}
+
+.pedal > span {
+    display:inline-block;
+    vertical-align:top;
+    background-color:#AAA;
+    width:100%;
+    height:50%;
+}
+
+#throttle  {
+    background-color:#0A0;
+}
+#brake {
+    background-color:#C00;
+}
+#clutch {
+    background-color:#FA0;
+}
